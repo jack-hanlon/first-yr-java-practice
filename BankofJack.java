@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class BankofJack{
 
 	/** Banking Interface for Users*/
-	
+
 	public static void Login(){
 		System.out.println("\t***********************************");
 		System.out.println("\tWelcome to the Bank of Jack\n\n\n \tPlease enter your Name and Password\n");
@@ -14,7 +14,7 @@ public class BankofJack{
 		System.out.print("\tPassword: ");
 		Scanner scan = new Scanner(System.in);
 		double password = scan.nextDouble();
-		if(name.equals("Jack") && password == 1873){
+		if(name.equals("Jack") && password == 2552){
 			RunInteraction();
 		}else {
 			System.out.println("The given username or password is incorrect");
@@ -28,13 +28,13 @@ public class BankofJack{
         yourAccount = new Account();
 
 		myAccount.setName("\n\tChequing");
-		myAccount.setAddress("45.61.5.4564");
+		myAccount.setAddress("75.31.5.4564");
 		myAccount.setBalance(339.31);
-		
+
 		yourAccount.setName("\tSaving");
-		yourAccount.setAddress("45.62.3.2346");
+		yourAccount.setAddress("55.22.3.2346");
 		yourAccount.setBalance(9701.43);
-		
+
          System.out.print(myAccount.getName());
          System.out.print(" (");
          System.out.print(myAccount.getAddress());
@@ -47,16 +47,16 @@ public class BankofJack{
          System.out.print(yourAccount.getAddress());
          System.out.print(")---------- $");
          System.out.println(yourAccount.getBalance());
-		
-		
+
+
     }
 
-		
+
 		 public static void DepositSaving(){
-			 
+
 		 }
 		 public static void eTransferWithdrawal(){
-			 
+
 		 }
 		 /** Handles the interactions in the interface*/
 		public static void RunInteraction(){
@@ -72,7 +72,7 @@ public class BankofJack{
 			Scanner sc = new Scanner(System.in);
 			String letter = sc.nextLine();
 			if(letter.equals("A") || letter.equals("a")){
-				
+
 				/*double original = myAccount.getBalance();
 				System.out.print("\n/tDeposit Amount: ");
 				Scanner john = new Scanner(System.in);
@@ -80,7 +80,7 @@ public class BankofJack{
 				double end = original + deposit;
 				myAccount.setBalance(end);
 				System.out.println("Chequing : "+myAccount.getBalance); */
-				
+
 			}else if(letter.equals("B") || letter.equals("b")){
 				System.out.println("test worked");
 			}else if(letter.equals("C") || letter.equals("c")){
@@ -94,11 +94,11 @@ public class BankofJack{
 			}else{
 				System.out.println("Incorrect value entered");
 			}
-			
+
 		}
 public static void main(String[] args){
 	Login();
-	
+
 }
 
 }
